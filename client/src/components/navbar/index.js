@@ -33,7 +33,7 @@ export class Navigation extends Component {
                 <Navbar.Brand href="/discover">Mediapedia</Navbar.Brand>
                 <Nav className="mr-auto">
                     <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/discover">Discover</Nav.Link>
+                    <Nav.Link href="/discovery">Discover</Nav.Link>
                 </Nav>
                 <Form inline onSubmit={this.onSubmit}>
                     <FormControl type="text" onChange={this.onChange} placeholder={this.state.search === '' ? 'Search' : this.state.search} className="mr-sm-2" />
