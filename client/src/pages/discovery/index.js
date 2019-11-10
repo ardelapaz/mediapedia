@@ -19,7 +19,7 @@ export class Discovery extends Component {
             <div className='discovery-container'>
                 {shows ? shows.map((show, index) => {
                     return <ShowPreview show={show} key={index} />
-                }) : noReultsMarkup}
+                }) : noResultsMarkup}
             </div >
         )
     }
