@@ -22,8 +22,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/discover', discoverRouter);
-app.use('/search', searchRouter);
+app.use('api/discover', discoverRouter);
+app.use('api/search', searchRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

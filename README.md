@@ -1,6 +1,6 @@
 # Mediapedia
 
-One Paragraph of project description goes here
+Your one stop shop for all things media! 
 
 ## Getting Started
 
