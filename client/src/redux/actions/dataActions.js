@@ -11,7 +11,7 @@ import axios from 'axios';
 
 export const getShows = () => (dispatch) => {
     return axios
-        .get('http://localhost:8000/api/discover')
+        .get('/api/discover')
         .then((res) => {
             dispatch({ type: SET_SHOWS, payload: res.data.results });
         })
@@ -22,7 +22,7 @@ export const getShows = () => (dispatch) => {
 
 export const searchShows = (searchForMe, history) => (dispatch) => {
     dispatch({ type: SET_QUERY, payload: searchForMe });
-    return axios.post('http://localhost:8000/api/search', { searchForMe }).then(res => {
+    return axios.post('/api/search', { searchForMe }).then(res => {
         dispatch({ type: SET_RESULTS, payload: res.data.results });
         history.push({ pathname: `/search/${searchForMe}`, state: { results: res.data.results } });
     }).catch((err) => {
