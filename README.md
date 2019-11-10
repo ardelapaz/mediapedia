@@ -4,84 +4,69 @@ Your one stop shop for all things media!
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
 What things you need to install the software and how to install them
 
 ```
-Give examples
+NPM
+```
+```
+Node.js
 ```
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+Clone this repository
 
 ```
-Give the example
+git clone https://github.com/ardelapaz/mediapedia
 ```
 
-And repeat
+cd into `mediapedia` and then run 
 
 ```
-until finished
+npm install
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+cd into `client` and also run 
+
+```
+npm install
+```
+
+Open a split terminal. In one terminal, go to `./mediapedia` and start the express server by running:
+
+```
+npm start
+```
+And in the other terminal, cd into `mediapedia/client` and run:
+
+```
+npm start
+```
+
+Open `localhost:3000` in your browser of choice
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
 ```
-Give an example
+cd client
 ```
-
-### And coding style tests
-
-Explain what these tests test and why
-
 ```
-Give an example
+npm run test
 ```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* [React](https://reactjs.org/docs/getting-started.html) - The web framework used
+* [Express](https://expressjs.com/en/starter/hello-world.html) - Backend server
+* [React-Router](https://reacttraining.com/react-router/core/guides/philosophy) - Used for client side routing for react
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* **Andrew Delapaz** - *Initial work* - [Portfolio](https://ardelapaz.github.io/)

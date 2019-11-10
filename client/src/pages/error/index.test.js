@@ -15,9 +15,9 @@ describe('NotFound page', () => {
         expect(wrapper.find(NotFound).length).toEqual(1);
     });
     it('Renders the "Not found" text prompt', () => {
-        expect(wrapper.find(NotFound).find('p').text()).toEqual("Oops! Whatever you're looking for does not exist.");
+        expect(wrapper.find(NotFound).find('h2').text()).toEqual("Oops! Whatever you're looking for does not exist.");
     });
     it('Renders the "Return Home" button', () => {
-        expect(wrapper.find(NotFound).find('button').length).toEqual(1);
+        expect(wrapper.find(NotFound).find('a').length).toEqual(1);
     });
 });
