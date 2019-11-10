@@ -31,7 +31,7 @@ export class App extends Component {
             <Navbar />
             <Switch>
               <Route exact path='/' component={homePage} />
-              <Route exact path='/discover' component={discovery} />
+              <Route exact path='/discovery' component={discovery} />
               <Route exact path='/show/:id' component={showPage} />
               <Route exact path='/search/:query' component={resultsPage} />
               <Route component={NotFound} />
