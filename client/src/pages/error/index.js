@@ -8,8 +8,8 @@ import { Button, } from 'react-bootstrap';
 export class NotFound extends Component {
     render() {
         return (
-            <div>
-                <p>
+            <div className='error-div'>
+                <p className='error-text'>
                     Oops! Whatever you're looking for does not exist.
 				</p>
                 <Button component={Link} to='/' color='secondary' variant='contained'>
