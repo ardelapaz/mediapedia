@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  background-color:black;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+body {
+  background-color:black;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.discovery-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 98%;
+}
+
+.card-wrapper {
+  margin: 10px;
+}
+
+.show-container{
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  background-color: #111;
+  color: white;
+  justify-content: space-around;
+}
+.show-right {
+  width: 50%;
+}
+.show-right-title {
+  height: 100px;
+}
+.show-right-overview {
+  width: 500px;
+  margin: 0 auto;
+}
+.show-right-info {
+margin-top: 10%;
+}
+
+.results {
+  color: white;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #222!important
+}
+#landing {
+  margin-top: '15vh';
+  color: white;
+  background-image: url('https://cdn.pixabay.com/photo/2017/07/31/18/28/room-2559790_960_720.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.landing {
+  background: rgba(0, 0, 0, .2);
+  width: 25vw;
+  margin: 0 auto;
+  margin-top: 20vh;
+  padding: 25px;
+}
+
+.no-results {
+  color: white;
+}
