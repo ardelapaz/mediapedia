@@ -19,8 +19,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('api/discover', discoverRouter);
-app.use('api/search', searchRouter);
+app.use('/api/discover', discoverRouter);
+app.use('/api/search', searchRouter);
 
 
 // Anything that doesn't match the above, send back index.html
