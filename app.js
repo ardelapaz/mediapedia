@@ -11,9 +11,9 @@ var searchRouter = require('./routes/search');
 
 var app = express();
 
-// // view engine setup
-// app.set('views', path.join(__dirname, 'views'));
-// app.set('view engine', 'jade');
+// Serve files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 
 app.use(logger('dev'));
 app.use(cors());
